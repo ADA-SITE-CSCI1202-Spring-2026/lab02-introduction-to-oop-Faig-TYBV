@@ -29,4 +29,10 @@ public class Point{
     x+=dx;
     y+=dy;
   }
+  public float distance(Point p){
+    return (float) Math.sqrt(Math.pow(x-p.x, 2)+Math.pow(y-p.y, 2));
+  }
+  public boolean equals(Point p){
+    return x==p.x && y==p.y;
+  }
 }
