@@ -35,4 +35,8 @@ public class Invoice{
     price=p;
     if(price<0) price=0.0;
   }
+  public double getInvoiceAmount(){
+    return quantity*price;
+  }
+  
 }
